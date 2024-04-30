@@ -1,0 +1,18 @@
+_id: env_54dc58df6c97437cae2766a87c869307
+type: Environment
+parentId: env_6c49fb6a047e6864b4ec182637b615a3b282d773
+modified: 1714479903334
+created: 1714479903334
+name: OpenAPI env null
+data:
+  scheme:
+    - http
+  base_path: /api/v3
+  host: ""
+  apiKey: apiKey
+  oauth2ClientId: clientId
+  oauth2RedirectUrl: http://localhost/
+dataPropertyOrder: null
+color: null
+isPrivate: false
+metaSortKey: 1714479903337

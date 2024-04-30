@@ -1,0 +1,40 @@
+_id: req_69f2352806234e738fe27a83a41ee48c
+type: Request
+parentId: fld_cea38d53e0a14f61894f5a3a6a343a99
+modified: 1714479903460
+created: 1714479903460
+url: "{{ _.base_url }}/user/createWithList"
+name: Creates list of users with given input array
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    [
+      {
+        "id": 10,
+        "username": "theUser",
+        "firstName": "John",
+        "lastName": "James",
+        "email": "john@email.com",
+        "password": "12345",
+        "phone": "12345",
+        "userStatus": 1
+      }
+    ]
+preRequestScript: ""
+parameters: []
+headers:
+  - name: Content-Type
+    disabled: false
+    value: application/json
+authentication: {}
+metaSortKey: -1714479903460
+isPrivate: false
+pathParameters: []
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

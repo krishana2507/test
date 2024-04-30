@@ -1,0 +1,52 @@
+_id: req_de1d575c92844b2a948881f6230d2ea4
+type: Request
+parentId: fld_fbe6252d126f495ab9f20b72ea869a4f
+modified: 1714479903365
+created: 1714479903365
+url: "{{ _.base_url }}/pet"
+name: Update an existing pet
+description: ""
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "id": 10,
+      "name": "doggie",
+      "category": {
+        "id": 1,
+        "name": "Dogs"
+      },
+      "photoUrls": [
+        "string"
+      ],
+      "tags": [
+        {
+          "id": 0,
+          "name": "string"
+        }
+      ],
+      "status": "string"
+    }
+preRequestScript: ""
+parameters: []
+headers:
+  - name: Content-Type
+    disabled: false
+    value: application/json
+authentication:
+  clientId: "{{ _.oauth2ClientId }}"
+  grantType: implicit
+  scope: write:pets read:pets
+  type: oauth2
+  redirectUrl: "{{ _.oauth2RedirectUrl }}"
+  authorizationUrl: https://petstore3.swagger.io/oauth/authorize
+metaSortKey: -1714479903365
+isPrivate: false
+pathParameters: []
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
